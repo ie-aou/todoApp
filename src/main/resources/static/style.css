@@ -1,0 +1,9 @@
+.main{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    margin: auto;
+}
