@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
         <div class="main">
             <div class="task">
                 <form method="post">
-                <!-- ここにタスクが一覧表示される -->   
+                <p th:text="${title}"></p>
                 </form>
             </div>    
             <h3><a href="/create">新しいタスクをつくる</a></h3>
