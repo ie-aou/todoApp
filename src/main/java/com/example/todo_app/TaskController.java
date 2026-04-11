@@ -2,6 +2,7 @@ package com.example.todo_app;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class TaskController {
@@ -15,6 +16,8 @@ public class TaskController {
     public String create() {
         return "create";
     }
+
+    @PostMapping("/create")
 
 }
 
