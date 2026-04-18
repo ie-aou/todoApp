@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>index</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
         <div class="main">
             <div class="task">
                 <form method="post">
-                <p th:text="${title}"></p>
+                    <p th:text="${title}"></p>
                 </form>
             </div>    
             <h3><a href="/create">新しいタスクをつくる</a></h3>

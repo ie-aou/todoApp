@@ -1,9 +1,11 @@
 .main{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+    text-align: center;
+    margin: auto;
 }
 header{
     text-align: center;
     margin: auto;
+}
+h1{
+    color: red;
 }
