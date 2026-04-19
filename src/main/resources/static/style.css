@@ -1,11 +1,11 @@
-.main{
+main{
     text-align: center;
     margin: auto;
-}
+    width: fit-content;
+} 
 header{
     text-align: center;
-    margin: auto;
 }
-h1{
-    color: red;
+.task{
+    text-align: left;
 }

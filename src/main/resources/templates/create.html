@@ -11,24 +11,21 @@
         <h1>🤗タスクをつくろう🤗</h1>
     </header>
     <main>    
-        <div class="main">
-            <form method="post" action="/create">
-                <div>
-                    なまえ　<input type="text" name="title"><br>
-                    <input type="date" name="startDate">から
-                    <input type="date" name="dueDate">まで<br>
-                    重要度　 <input type="radio" name="priority" value="高">高
-                    <input type="radio" name="priority" value="中">中
-                    <input type="radio" name="priority" value="低">低<br>
-                    詳細　　<textarea name="detail" id="" cols="30"></textarea><br>
-                </div>
-                <div>    
-                    <button type="submit">つくる！</button>
-                    <button type="reset">やりなおし</button>
-                </div>    
-            </form>
-            <a href="/">もどる</a>
-        </div>
+        <form method="post" action="/create">
+            <div class="task">
+                なまえ　<input type="text" name="title"><br>
+                <input type="date" name="startDate">から
+                <input type="date" name="dueDate">まで<br>
+                重要度　 <input type="radio" name="priority" value="高">高
+                <input type="radio" name="priority" value="中">中
+                <input type="radio" name="priority" value="低">低<br>
+                詳細　<textarea name="detail" id="" cols="30"></textarea><br>   
+                <button type="submit">つくる！</button>
+                <button type="reset">やりなおし</button>
+            </div>    
+        </form>
+        <br>
+        <a href="/">もどる</a>
     </main>
 </body>
 </html>
