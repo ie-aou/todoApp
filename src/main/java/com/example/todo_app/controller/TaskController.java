@@ -23,8 +23,11 @@ public class TaskController {
     @PostMapping("/create")
     public String create(@ModelAttribute TaskForm form, Model model) {
         model.addAttribute("title", form.getTitle());
+        model.addAttribute("startDate", form.getStartDate());
+        model.addAttribute("dueDate", form.getDueDate());
+        model.addAttribute("priority", form.getPriority());
+        model.addAttribute("detail", form.getDetail());
         return "index";
-
     }
 }
 

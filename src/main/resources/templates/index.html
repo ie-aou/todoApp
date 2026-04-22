@@ -13,7 +13,10 @@
     <main>
         <div class="task">
             <form method="post">
-                <p th:text="${title}"></p>
+                <p th:text="${priority}"></p>
+                <h4 th:text="${title}"></h4>
+                <p th:text="${startDate}">から</p><p th:text="${duetDate}">まで</p><br>
+                <p th:text="${detail}"></p>
             </form>
         </div>    
         <h3><a href="/create">新しいタスクをつくる</a></h3>
